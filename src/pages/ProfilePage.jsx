@@ -4,7 +4,6 @@ import MainPage from "./MainPage";
 
 function ProfilePage() {
   const navigate = useNavigate();
-  // const [getData,setGetData] = useState(1)
   const [myValue, setMyValue] = useState('');
   const [userProfile, setUserProfile] = useState([]);
   const [userStared, setUserStared] = useState(0);
@@ -20,7 +19,6 @@ function ProfilePage() {
     }
   });
 
-  
   //Lấy tên và description
   useEffect(() => {
     async function fetchUserProfile() {
@@ -76,9 +74,6 @@ function ProfilePage() {
     }
     fetchUserIssue();
   },[myValue]);
-
-  
-
   return (
     <div>
       <h1 className="italic font-bold text-cyan-500 mb-[10px]">User Profile</h1>
@@ -106,12 +101,10 @@ function ProfilePage() {
         </p>
       </div>
       <div>
-        <button className="border-2 border-slate-950 m-[10px] bg-red-300 hover:bg-violet-600" onClick={() => navigate("/repository")}>Go to RepositoryPage</button>
-      
+        <button className="border-2 border-slate-950 m-[10px] bg-red-300 hover:bg-violet-600" onClick={() => navigate("/repository")}>Go to RepositoryPage</button>      
       </div>
     </div>
 
   );
 }
-
 export default ProfilePage;
