@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 function RepositoryPage() {
   const navigate = useNavigate();
-  const token = "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"
+  const token = "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"
   const [myValue, setMyValue] = useState('');
   const [commits, setCommits] = useState([]);
   

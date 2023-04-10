@@ -8,7 +8,7 @@ function ProfilePage() {
   const [userProfile, setUserProfile] = useState([]);
   const [userStared, setUserStared] = useState(0);
   const [userIssue, setUserIssue] = useState(0);
-  const token = "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"
+  const token = "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"
 
   //Lay ten nguoi dung
   useEffect(() => {
